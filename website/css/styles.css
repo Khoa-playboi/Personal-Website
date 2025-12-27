@@ -1,0 +1,403 @@
+/* Google Fonts: Inter and Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* To change fonts: Update the font-family in body or specific elements. Use Google Fonts link above. */
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #003366; /* Navy blue */
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navbar .nav-links li {
+    margin-left: 2rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #003366; /* Navy blue on hover */
+    text-decoration: underline;
+}
+
+
+
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-card {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+#circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background: none;   
+  border: none;       
+  box-shadow: none;   
+  padding: 0;        
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ddd; /* Placeholder */
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #003366;
+}
+
+.profile-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #003366;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0055aa;
+}
+
+.intro-section {
+    flex: 1;
+}
+
+.intro-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.intro-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    background-color: #0055aa;
+}
+
+.intro-text {
+    margin-top: 1rem;
+}
+
+
+
+.resume-section {
+    background-color: #f5f5f0;
+    padding: 2rem 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.resume-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resume-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+    margin-left:1rem;
+}
+
+.experience-description{
+    margin-left:0.5rem;
+
+}
+
+.experience-year {
+    font-weight: 600;
+    color: #003366;
+}
+
+.experience-title {
+    font-weight: 600;
+}
+
+.experience-org {
+    font-style: italic;
+    color: #666;
+}
+
+.skills-list {
+    list-style: disc;
+    margin-left: 1rem;        
+    padding-left: 0.5rem;
+}
+
+.skills-list li {
+   margin-bottom: 0.3rem;
+}
+
+
+
+
+
+
+.researches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.research-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    border-color: #003366;
+}
+
+.research-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #003366;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-preview {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    color: #555;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* To add new research cards: Duplicate .research-card div in HTML, update title, preview, button link. */
+
+/* Research Template */
+.research-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.research-background {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom:2rem;
+}
+
+.pdf-embed {
+    width: 100%;
+    height: 850px;
+    border: none;
+}
+
+/* To upload PDFs: Place PDF files in /pdfs/ folder, update src in <embed> or <iframe>. */
+
+/* Contact Page */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0055aa;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    .home-section {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        order: -1;
+    }
+
+    .intro-header {
+        font-size: 2rem;
+    }
+}
+
+/* To change colors: Update color values in CSS, e.g., #003366 for navy blue. */
+/* To change spacing: Adjust padding, margin values in relevant classes. */

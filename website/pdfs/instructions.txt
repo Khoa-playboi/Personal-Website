@@ -1,0 +1,7 @@
+Instructions for PDFs:
+
+- Place your PDF files in this /pdfs/ folder.
+- Update the src attribute in research-template.html to point to your PDF, e.g., src="pdfs/your-research.pdf".
+- Use <embed> or <iframe> for embedding.
+- To add new research pages: Duplicate research-template.html, update title, background, and PDF src.
+- Alternatively, extend the JS in script.js to handle more projects.

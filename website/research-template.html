@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Nguyen Ho Khoa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nguyen Ho Khoa - Student Researcher</div>
+        <ul class="nav-links">
+            <li><a href="index.html">ABOUT ME</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="researches.html">RESEARCHES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="research-title" id="research-title">Research Title</h1>
+        <div class="research-background">
+            <h2>Background & Motivation</h2>
+            <p id="research-background">
+                This section explains why the research was started, what inspired it, and what problem it addresses. Placeholder text here.
+            </p>
+            <!-- To edit background text: Update the content in JS or directly in HTML if static. -->
+        </div>
+        <div class="pdf-embed">
+            <!-- To embed PDFs: Use <embed> or <iframe> as below. The src is set dynamically by JS based on project ID. -->
+            <embed id="pdf-embed" src="" type="application/pdf" width="100%" height="850px" />
+            <!-- Alternative: <iframe id="pdf-iframe" src="" width="100%" height="850px"></iframe> -->
+            <!-- How to upload PDFs: Place your PDF files in the /pdfs/ folder. Update the pdfSrc in js/script.js for each project. -->
+            <!-- How to create new research pages: Duplicate this file, update title, background, and PDF src. Or use JS to dynamically load based on project ID. -->
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
